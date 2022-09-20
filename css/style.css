@@ -1,3 +1,12 @@
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --primary: #ffc107;
+  --secondary: #0097a7;
+  --grey: #757575;
+
+}
+
 html {
   font-size: 62.5%;
 }
