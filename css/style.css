@@ -64,7 +64,9 @@ h3 {
 h1,h2,h3 {
   text-align: center;
 }
-
+p {
+  font-size: 1.3rem;
+}
 .titulo span {
   font-size: 2rem;
 }
@@ -128,4 +130,69 @@ h1,h2,h3 {
 .location {
   display: flex;
   align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+/** My Services section**/
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.service h3 {
+  color: var(--secondary);
+  font-weight: normal;
+}
+.service p {
+  line-height: 2;
+}
+.service .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*Contact section*/
+.form {
+  background-color: var(--grey);
+  width: min( 60rem, 100% ); /*Min utiliza el valor mas pequeno*/
+  margin: 0 auto; /*centrar horizontalmente donde el padre no tenga un display flex, elemento tipo block*/
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.form fieldset {
+  border: none;
+}
+.form legend {
+  color: var(--primary);
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.label-container {
+
+}
+.campo {
+  margin-bottom: 1rem;
+
+}
+.campo label {
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
 }
