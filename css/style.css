@@ -17,8 +17,30 @@ body {
 .titulo {
   text-align: center;
   font-size: 3.8rem;
-  
 }
 .titulo span {
   font-size: 2rem;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+.nav-background {
+  background-color: var(--secondary);
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.main-nav a:hover {
+  background-color: var(--primary);
+  color: var(--black);
 }
