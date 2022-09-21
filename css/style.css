@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 *,*:before, *:after {
   box-sizing: inherit;
@@ -234,4 +235,9 @@ p {
 }
 .campo textarea {
   height: 20rem;
+}
+
+/*Footer*/
+.footer {
+  text-align: center;
 }
